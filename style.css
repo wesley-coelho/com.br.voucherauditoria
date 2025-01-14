@@ -1,0 +1,108 @@
+/*Reset params*/
+*{
+   margin: 0;
+   text-decoration: none;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Helvetica", sans-serif; 
+   border: none;
+}
+
+/*Body*/
+
+body{
+    width: 100%; 
+
+    background-color: #ffffff;
+    text-align: center;
+}
+
+header{
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+}
+
+nav{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    background-color: #cdcdcd;
+    width: 100%;
+    height: 100px;
+}
+
+.container-carrossel{
+    margin: 0 auto;
+    width: 1280px;
+    height: 540px;
+    overflow: hidden;
+}
+
+
+.carrossel{
+    overflow: hidden;
+    width: 3840px;
+    height: 540px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+}
+
+.carrossel .container-fotos{
+    width: 1280px;
+    height: 540px;
+    background-color: #433e3f;
+    text-align: center;
+
+
+}
+
+.carrossel .container-fotos h1{
+    line-height: 540px;
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+.container-radios{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 630px;
+    left: 43%;
+    width: 200px;
+    height: 30px;
+}
+.container-radios > input[type=radio]{
+    display: none;
+}
+
+.container-radios > label{
+    margin: 5px 2px;
+    width: 30px;
+    height: 5px;
+    background-color: rgb(109, 109, 109);
+
+}
+
+.container-radios > label:hover{
+    cursor: pointer;
+}
+
+
+.container-radios > input:checked + label{
+    transition: 0.3s;
+    background-color: white;
+
+}
+
+.container-fotos{
+    transition: 1s ease-in-out;
+}
+
+
