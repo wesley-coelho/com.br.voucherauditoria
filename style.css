@@ -4,77 +4,172 @@
    text-decoration: none;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Helvetica", sans-serif; 
+   font-family: "Montserrat", sans-serif; 
    border: none;
 }
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+
 
 /*Body*/
 
 body{
     width: 100%; 
-
     background-color: #ffffff;
     text-align: center;
 }
 
 header{
-    display: flex; 
+    /* display: flex; 
     flex-direction:row; 
     justify-content: space-evenly;
     background-color: white;
     width: 100%;
-    height: 30px;
+    height: 30px; */
 }
 
-nav{
+#container-navmenu{
     display: flex; 
     flex-direction: row; 
-    justify-content: space-evenly;
-    background-color: #cdcdcd;
-    width: 100%;
+    justify-content:center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 24px;   
+    color:#ffffff;
+    margin: auto;
+    width: 70%;
     height: 100px;
+
+ 
 }
+
+
+#nav-menu{ 
+    background-color: rgba(0, 52, 89,0.8);
+}
+
+#main-menu{   
+    float: left;
+}
+
+#main-menu li{
+    display: inline-block;
+    padding: 0 10px;
+    color: white;
+    transition: color 1s;
+}
+
+#main-menu li:hover{
+    cursor: pointer;
+    color: #F2994A;
+}
+
+#pag-principal{
+    width: 100%;
+    height:100vh;
+    background-image: url("bg-capa.png");
+}
+
+#slogan{
+    margin: 10% 0 0 0;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+#slogan span{
+    font-weight: 600;
+}
+
+.btn-saibaMais{  
+    margin: 10px 0 0 0;   
+    text-align: center;   
+    width: 200px;
+    height: 60px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition: border 0.5s, background-color 0.5s;
+}
+
+.btn-saibaMais:hover{
+    background-color: #F2994A;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-saibaMais h1:hover{
+    font-weight: 800;
+
+}
+
+.btn-saibaMais h1{ 
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 60px;
+    transition: font-weight 0.2s;
+}
+
+.title-pag{
+    font-weight: 800;
+    font-size: 28px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+
+#missao-valores{
+    clear: both;
+    background-color: #E0E1DD;
+}
+
+
+
+#servicos{
+    position: relative;
+    overflow: hidden; 
+    height: 720px;
+
+}
+
 
 .container-carrossel{
     margin: 0 auto;
-    width: 1280px;
-    height: 540px;
-    overflow: hidden;
-}
 
+}
 
 .carrossel{
-    overflow: hidden;
-    width: 3840px;
-    height: 540px;
-    margin: 0 auto;
-    background-color: red;
-    display: flex;
-}
-
-.carrossel .container-fotos{
-    width: 1280px;
-    height: 540px;
-    background-color: #433e3f;
-    text-align: center;
-
 
 }
 
-.carrossel .container-fotos h1{
-    line-height: 540px;
-    margin: 0 auto;
 
-    color: #fff;
+.bg-service{
+    position: absolute;
+    top: 0;
+    margin: auto;
+    display: block;
+    z-index: -2;
+    width: 100%;
+    filter: blur(5px);
+    transition: opacity 1s;
+
 }
-
 .container-radios{
     display: flex;
     justify-content: center;
     text-align: center;
     position: absolute;
-    top: 630px;
+    bottom: 20px;
     left: 43%;
+    margin: 0 auto;
     width: 200px;
     height: 30px;
 }
@@ -106,3 +201,168 @@ nav{
 }
 
 
+.icon-services{
+    float: left;
+    width: 100px; 
+    height: 100px; 
+    margin: 10px auto;
+}
+
+
+
+.title-service{
+    width: 450px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.container-desc{
+
+    display: flex;
+    transition: opacity 1s;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 70%;
+    margin: auto;
+    
+}
+.desc-service{
+  
+    width: 450px;
+    text-align: left;
+    color: #fff; 
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+
+#clientes-parceiros{
+    height: 100%;
+    background: url('bg-nossos-clientes.png') no-repeat;
+}
+
+#container-clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 8000px;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.card-cliente{
+    width: 250px;
+    height: 270px;
+    background-color: #2660A4;
+}
+.setaCarrousselClientes{
+    font-size: 20px; 
+    margin: 10px; 
+    opacity: 0.5;
+}
+
+.setaCarrousselClientes:hover{
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container-foto-cliente{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#fale-conosco{
+    background-color: #F3F7FA;
+    height: 500px;
+}
+
+
+.input-format{
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 0.5%;
+    width: 30%;
+}
+
+.input-message{
+    width: 61.5%;
+    height: 200px;
+}
+
+.btn-enviar{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0.5%;
+    padding: 5px 10%;
+}
+#localizacao{
+    background-color: #fffdf3;
+}
+
+#container-localizacao{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#contato-voucher{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 50px;
+  
+}
+
+#endereco-voucher{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer{
+    background-color: #003459;
+    width: 100%;
+    height: 200px;
+}
+#container-rodape{ 
+    width: 70%;
+    margin:  0 auto;
+    padding: 10px 30px;
+
+}
+#logo-rodape{
+    float: left;
+}
+.hr-footer{
+    width: 70%;
+    height: 0.2px;  
+    margin: auto;
+    color:#848484; 
+    background-color: #848484; 
+    opacity: 1;
+}
+.font-formt-footer{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: rgb(255,255,255);
+    margin-left: 30px;
+}
+.paragraph-right{
+    font-size: 14px;
+    float: right;
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    text-align: left;
+
+}
